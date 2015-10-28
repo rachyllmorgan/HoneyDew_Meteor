@@ -1,0 +1,22 @@
+[class^="bg-image"],
+[class*=" bg-image"] {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+
+  &[class*="about"] {
+    .background-image(
+      linear-gradient(top, rgba(0,0,0,.2) 0%, rgba(0,0,0,.2) 100%),
+      url('https://orlandoespinosa.files.wordpress.com/2014/10/quit-your-nagging-orlando-espinosa.png?w=812')
+    );
+  }
+
+  &[class*="home"] {
+    .background-image(
+      linear-gradient(top, rgba(0,0,0,.1) 0%, rgba(0,0,0,.4) 100%),
+      url('http://img09.deviantart.net/6eb5/i/2012/309/1/2/logo_design__honeydew_list_by_pinkbunnie-d5k4d13.jpg')
+    );
+  }
+}

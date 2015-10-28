@@ -1,0 +1,45 @@
+<template name="home">
+  <div class="page home">
+
+    {{>nav title='Honey Dew List' black=true}}
+
+    <div class="content-scrollable">
+      <div class="bg-image home">
+        <h1 class="title-home">
+          <!-- Need Honey Dew Logo -->
+          <!-- <img src="img/app/logo-local.svg" alt="Local Market"/> --> 
+        </h1>
+<!--         <span class="subtitle"><span class="title-callout">Hours</span>
+        Mon–Fri 9-6pm, Sat 10-5pm</span> -->
+        <span class="arrow"></span>
+      </div>
+
+      <div class="callout-news">
+        <span class="title-callout">DEWed!</span>
+        {{latestNews.text}}
+      </div>
+
+      <h2 class="list-title">What's To-Dew?</h2>
+      <div class="list-subtitle">See what we can DEW today?</div>
+      <div class="list-activities">
+        {{#each events}}
+          {{> event}}
+        {{else}}
+<!--           <div class="wrapper-message">
+            <div class="title-message">No one is DEW-ing yet!</div>
+          </div> -->
+        {{/each}}
+      </div>
+      <a href="{{pathFor 'feed'}}" class="btn-primary">List of To-DEWs!</a>
+
+      <div class="list-recipes">
+        {{#each featuredRecipes}}
+          {{> recipeItem recipe=this size='small'}}
+        {{/each}}
+      </div>
+
+      <a href="{{pathFor 'recipes'}}" class="btn-primary">Explore all our To-DEWs</a>
+    </div>
+
+  </div>
+</template>
