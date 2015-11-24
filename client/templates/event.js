@@ -17,11 +17,11 @@ Template.event.helpers({
   firstName: function() {
     return this.userName.split(' ')[0];
   },
-  recipeTitle: function() {
-    return RecipesData[this.recipeName].title;
+  listTitle: function() {
+    return ListsData[this.listName].title;
   },
   path: function() {
-    return Router.path('recipe', { name: this.recipeName },
-      { query: { eventId: this._id } })
+    return Router.path('lists', { name: this.listName },
+      { query: { _id: this._id } })
   }
 })

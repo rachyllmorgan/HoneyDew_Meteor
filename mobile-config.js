@@ -1,8 +1,8 @@
 App.info({
-  name: 'Local Market',
-  description: 'A recipe sharing app made in Meteor.',
+  name: 'The Honey Dew List',
+  description: 'A to-do list sharing app.',
   author: 'Percolate Studio Team',
-  email: 'us@percolatestudio.com',
+  email: 'rachyllmorgan@gmail.com',
   website: 'http://percolatestudio.com',
   version: '0.0.1'
 });
